@@ -9,18 +9,28 @@ const geist = Geist({
 
 export const metadata = {
   title: "Daily Niyam - Jain Pacchakan, Niyam, Aradhana",
-  description:
-    "Jain niyams, pacchakan, aradhana for everyday purposes. Exciting quiz and question on every visit.",
+  description: "Jain niyams, pacchakan, aradhana for everyday purposes.",
+  keywords: [
+    "Jain Pachkhan",
+    "Jain niyamn",
+    "Jain aradhana",
+    "Jain pachhakhan",
+    "jain pachkan",
+    "daily niyam",
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={cn("antialiased bg-slate-50 text-black", geist.className)}
+        className={cn(
+          "antialiased bg-slate-50 text-black scroll-smooth overflow-y-auto overflow-x-hidden",
+          geist.className
+        )}
       >
         <Navbar />
-        <main className="p-2 py-4 md:p-4 md:py-8 flex justify-center w-full">
+        <main className="p-2 py-4 md:p-4 md:py-8 flex justify-center w-full scroll-smooth">
           <section className="max-w-7xl w-full">{children}</section>
         </main>
       </body>
