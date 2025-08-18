@@ -3,12 +3,15 @@ import Paragraph from "@/components/atoms/paragraph";
 import NiyamDrawer from "@/components/niyam-drawer";
 import Niyamavali from "@/components/niyamavali";
 import { Pachkhans } from "@/constants/pachkhans";
+import { MoonIcon, SunIcon } from "lucide-react";
 import Link from "next/link";
 
 const Home = () => {
   return (
     <div className="flex flex-col items-center gap-6 w-full">
-      <Heading>Today's Niyam</Heading>
+      <div className="flex items-center justify-between w-full gap-4">
+        <Heading>Today's Niyam</Heading>
+      </div>
       <Paragraph>
         <b>Choose a number</b> from below table to take a niyam, or get a{" "}
         <Link href={"/#random-niyam"} className="underline">
@@ -26,8 +29,13 @@ const Home = () => {
         {Pachkhans.map((pachkhan) => (
           <Link
             href={pachkhan.slug}
-            className="p-3 md:px-6 shadow rounded-xl border hover:bg-slate-100 bg-white font-medium transition-colors duration-300"
+            className="p-3 md:px-6 flex items-center gap-2 shadow rounded-xl border hover:bg-slate-100 bg-white font-medium transition-colors duration-300"
           >
+            {pachkhan.time === "day" ? (
+              <SunIcon className="size-4 text-yellow-600" />
+            ) : (
+              <MoonIcon className="size-4 text-violet-600" />
+            )}
             {pachkhan.title} -&gt;
           </Link>
         ))}

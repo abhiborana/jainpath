@@ -12,6 +12,8 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Niyams } from "@/constants/niyams";
+import { Share2Icon } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { ScratchToReveal } from "./magicui/scratch-to-reveal";
 
@@ -19,11 +21,24 @@ const NiyamDrawer = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Drawer dismissible={false} open={isOpen} onOpenChange={setIsOpen}>
-      <DrawerTrigger asChild>
-        <Button id="random-niyam" className={"text-lg px-6 py-6 rounded-full"}>
-          Get Random Niyam
+      <div className="flex items-center gap-4 flex-wrap items-center justify-center">
+        <DrawerTrigger asChild>
+          <Button
+            id="random-niyam"
+            className={"text-lg px-6 py-6 rounded-full"}
+          >
+            Get Random Niyam
+          </Button>
+        </DrawerTrigger>
+        <Button asChild className={"rounded-full"} variant={"outline"}>
+          <Link
+            href="https://api.whatsapp.com/send/?text=Take today's niyam or pachkhan at https%3A%2F%2Fwww.dailyniyam.vercel.app&type=custom_url"
+            target="_blank"
+          >
+            <Share2Icon /> WhatsApp
+          </Link>
         </Button>
-      </DrawerTrigger>
+      </div>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm flex flex-col items-center">
           <DrawerHeader>
@@ -39,7 +54,7 @@ const NiyamDrawer = () => {
             className="flex items-center justify-center overflow-hidden rounded-2xl border-2 bg-pink-100 border-[#631646]"
             gradientColors={["#8C2A4D", "#631646", "#8C2A4D"]}
           >
-            <p className="tracking-wide leading-8">
+            <p className="tracking-wide leading-8 text-2xl text-center text-balance font-medium">
               {Niyams[Math.floor(Math.random() * Niyams.length)]}
             </p>
           </ScratchToReveal>

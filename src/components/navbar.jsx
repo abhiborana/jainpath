@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="w-full flex justify-center items-center border-b border-slate-200 p-4 h-16">
-      <div className="max-w-7xl w-full h-full flex justify-between items-center gap-4">
+    <header className="w-full flex justify-center items-center border-b border-slate-200 p-2 md:p-4">
+      <div className="max-w-7xl w-full h-full flex flex-wrap justify-between items-center gap-2 md:gap-4">
         <Link
           className="relative flex items-center gap-2"
           data-state="closed"

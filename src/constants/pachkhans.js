@@ -10,6 +10,7 @@ export const Pachkhans = [
       "Avaddh pachkan",
       "subha ka pachkan",
     ],
+    time: "day",
     english:
       "Uggae Sure, Namukkaara-Sahiam, Porisim, Saaddhaporisim, Sure, Uggae, Purimaddha, Avaddha, Mutthisahiam, Pachchakkhaai (Pachchakkhaami), Chauviham Pi, Aahaaram, Asanam, Paanam, Khaaimam, Saaimam, Annathanaabhogenam, Sahasaagaarenam, Pachchhanakaalenam, Disaamohenam, Saahuvayanenam, Mahattaraagaarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami)",
     gujrati:
@@ -26,6 +27,7 @@ export const Pachkhans = [
       "Ekasana pachkan",
       "Biyasana pachkan",
     ],
+    time: "day",
     english:
       "Uggae Sure, Namukkaar-Sahiam, Porisim, Saaddhaporisim, Mutthisahim, Pachchakkhaai (Pachchakkhaami), Uggae, Sure, Chauviham Pi, Aahaaram, Asanam, Paanam, Khaaimam, Saaimam, Annathanaabhogenam, Sahasaagaarenam, Pachchhannakaalenam, Disaamohenam, Saahuvayanenam, Mahattaraagaarenam, Savvasamaahivattiyaa-Gaarenam, Aayambilam, Nivvigaiam, Vigaio Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Levaalevenam, Gihatthsansatthenam, Ukhit-Vivegenam, Paduchch Makkhhienam, Paaritthaavaniyaagaarenam, Mahattaraagaarenam, Savvasamaahivattiyaa-Gaarenam, Ekaasanam, Biyaasanam, Pachchakkhaai (Pachchakkhaami), Tiviham Pi, Aahaaram, Asanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Saagaariyagaarenam, Aauntana-Pasaarenam, Guru-Abbhutthaanenam, Paaritthaavaniyaagaarenam, Mahattaraagaarenam, Savvasamaahivattiya-Gaarenam, Paanassa Levena Vaa, Alevena Vaa, Achchhena Vaa, Bahulevena Vaa, Sasitthena Vaa, Asitthena Vaa, Vosirai (Vosiraami).",
     gujrati:
@@ -37,6 +39,7 @@ export const Pachkhans = [
     title: "Tivihar Upvas Pachkan",
     slug: "/jain-pachkhan-tivihar-upvas",
     seo: ["Tivihar Upvas Pachkan", "upvas pachkan", "tivihar upwas"],
+    time: "day",
     english:
       "Sure, Uggae, Abbhattattham, Pachchakkhaai (Pachchakkhaami), Tiviham Pi Aahaaram, Asanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Paaritthaavaniyaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Paanhaar, Porisim, Saaddhaporisim, Sure Uggae Purimaddha, Avatddha, Mutthisahiam, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Pachchhannakaalenam, Disaamohenam, Saahuvayanenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Paanassa Levena Vaa, Alevena Vaa, Achchhena Vaa, Bahulevena Vaa, Sasitthena Vaa, Asitthena Vaa, Vosirai (Vosiraami).",
     gujrati:
@@ -48,6 +51,7 @@ export const Pachkhans = [
     title: "Chauvihar / Tivihar / Duvihar Pachkan",
     slug: "/jain-pachkhan-chauvihar-tivihar-duvihar",
     seo: ["Chauvihar Pachkan", "Tivihar Pachkan", "Duvihar Pachkan"],
+    time: "night",
     english:
       "Divasacharimam, Pachchakkhaai (Pachchakkhaami), Chauviham Pi Aahaaram, Tiviham Pi Aahaaram, Duviham Pi Aahaaram, Asanam, Paanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
     gujrati:
@@ -59,6 +63,7 @@ export const Pachkhans = [
     title: "Panahar Pachkan",
     slug: "/jain-pachkhan-panahar",
     seo: ["Panahar Pachkan", "panahar pachkhan"],
+    time: "night",
     english:
       "Paanahaar, Divasacharimam, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
     gujrati:
@@ -70,6 +75,7 @@ export const Pachkhans = [
     title: "Dharana Abhigrah Pachkan",
     slug: "/jain-pachkhan-dharana-abhigrah",
     seo: ["Dharana Abhigrah Pachkan", "dharana abhigrah pachkhan"],
+    time: "night",
     english:
       "Dharanaa, Abhiggaham, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
     gujrati:
