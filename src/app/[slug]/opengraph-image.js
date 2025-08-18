@@ -1,3 +1,4 @@
+import { Pachkhans } from "@/constants/pachkhans";
 import { ImageResponse } from "next/og";
 
 // Image metadata
@@ -9,7 +10,10 @@ export const size = {
 export const contentType = "image/png";
 
 // Image generation
-export default async function Image() {
+export default async function Image({ params }) {
+  const { slug = "" } = (await params) || {};
+  const pachkhan = Pachkhans.find((s) => s.slug === `/${slug}`);
+
   return new ImageResponse(
     (
       // ImageResponse JSX element
@@ -108,7 +112,9 @@ export default async function Image() {
             transform="translate(63,8)"
           />
         </svg>
-        <div style={{ marginTop: 40 }}>Daily Niyam, Pachkhan, Aradhana</div>
+        <div style={{ marginTop: 40 }}>
+          {pachkhan?.title || "Daily Niyam - 404 Not found"}
+        </div>
       </div>
     )
   );
