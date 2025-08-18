@@ -1,3 +1,5 @@
+import Navbar from "@/components/navbar";
+import { cn } from "@/lib/utils";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +16,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geist.className} antialiased`}>{children}</body>
+      <body
+        className={cn("antialiased bg-slate-50 text-black", geist.className)}
+      >
+        <Navbar />
+        <main className="p-2 py-4 md:p-4 md:py-8 flex justify-center w-full">
+          <section className="max-w-7xl w-full">{children}</section>
+        </main>
+      </body>
     </html>
   );
 }
