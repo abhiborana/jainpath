@@ -21,6 +21,9 @@ const Navbar = () => {
             Daily Niyam
           </span>
         </Link>
+        <Link href="/#pachkhans" className="text-slate-500 text-sm font-medium">
+          <nav>Pachkhans -&gt;</nav>
+        </Link>
         {/* <Button></Button> */}
       </div>
     </header>

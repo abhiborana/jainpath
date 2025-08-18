@@ -20,7 +20,9 @@ const NiyamDrawer = () => {
   return (
     <Drawer dismissible={false} open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger asChild>
-        <Button>Get Random Niyam</Button>
+        <Button id="random-niyam" className={"text-lg px-6 py-6 rounded-full"}>
+          Get Random Niyam
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm flex flex-col items-center">
