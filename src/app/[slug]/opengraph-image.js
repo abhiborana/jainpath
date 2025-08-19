@@ -112,7 +112,7 @@ export default async function Image({ params }) {
             transform="translate(63,8)"
           />
         </svg>
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: 40, color: "$631646" }}>
           {pachkhan?.title || "Daily Niyam - 404 Not found"}
         </div>
       </div>
