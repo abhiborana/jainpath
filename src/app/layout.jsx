@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
           <section className="max-w-7xl w-full">{children}</section>
         </main>
         <Toaster richColors theme="light" />
+        <Analytics />
       </body>
     </html>
   );

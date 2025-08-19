@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+import nextPWA from "next-pwa";
+
+const withPWA = nextPWA({
+  dest: "public",
+  disable: process.env.VERCEL_ENV !== "production",
+});
+const nextConfig = withPWA({});
 
 export default nextConfig;

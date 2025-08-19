@@ -28,13 +28,14 @@ const Home = () => {
       <div className="flex flex-col gap-3">
         {Pachkhans.map((pachkhan) => (
           <Link
+            key={pachkhan.title}
             href={pachkhan.slug}
-            className="p-3 md:px-6 flex items-center gap-2 shadow rounded-xl border hover:bg-slate-100 bg-white font-medium transition-colors duration-300"
+            className="p-3 md:px-6 flex items-center gap-4 shadow rounded-xl border hover:bg-slate-100 bg-white font-medium transition-colors duration-300"
           >
             {pachkhan.time === "day" ? (
-              <SunIcon className="size-4 text-yellow-600" />
+              <SunIcon className="size-4 text-yellow-600 shrink-0" />
             ) : (
-              <MoonIcon className="size-4 text-violet-600" />
+              <MoonIcon className="size-4 text-violet-600 shrink-0" />
             )}
             {pachkhan.title} -&gt;
           </Link>
