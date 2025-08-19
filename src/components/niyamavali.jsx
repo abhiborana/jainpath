@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Niyams } from "@/constants/niyams";
+import useLocalStorage from "@/hooks/useLocalStorage";
 import { shuffleArray } from "@/lib";
 import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
@@ -17,6 +18,7 @@ import { Button } from "./ui/button";
 
 const Niyamavali = () => {
   const [open, setOpen] = useState(false);
+  const [_, setNiyam] = useLocalStorage("niyam", null);
 
   const shuffledNiyams = shuffleArray(Niyams);
   const confettiRef = useRef(null);
@@ -56,7 +58,10 @@ const Niyamavali = () => {
           />
           <DialogFooter className="justify-end">
             <Button
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setNiyam(shuffledNiyams[open - 1]);
+                setOpen(false);
+              }}
               type="button"
               className={"w-fit z-10 ml-auto tracking-wide"}
             >

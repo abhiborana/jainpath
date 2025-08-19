@@ -12,6 +12,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Niyams } from "@/constants/niyams";
+import useLocalStorage from "@/hooks/useLocalStorage";
 import { Share2Icon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -19,9 +20,13 @@ import { ScratchToReveal } from "./magicui/scratch-to-reveal";
 
 const NiyamDrawer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [_, setNiyam] = useLocalStorage("niyam", null);
+
+  const niyam = Niyams[Math.floor(Math.random() * Niyams.length)];
+
   return (
     <Drawer dismissible={false} open={isOpen} onOpenChange={setIsOpen}>
-      <div className="flex items-center gap-4 flex-wrap items-center justify-center">
+      <div className="flex items-center gap-4 flex-wrap justify-center">
         <DrawerTrigger asChild>
           <Button
             id="random-niyam"
@@ -55,12 +60,18 @@ const NiyamDrawer = () => {
             gradientColors={["#8C2A4D", "#631646", "#8C2A4D"]}
           >
             <p className="tracking-wide leading-8 text-2xl text-center text-balance font-medium">
-              {Niyams[Math.floor(Math.random() * Niyams.length)]}
+              {niyam}
             </p>
           </ScratchToReveal>
           <DrawerFooter>
             <DrawerClose asChild>
-              <Button variant={"default"} onClick={() => setIsOpen(false)}>
+              <Button
+                variant={"default"}
+                onClick={() => {
+                  setNiyam(niyam);
+                  setIsOpen(false);
+                }}
+              >
                 वोसीरामी
               </Button>
             </DrawerClose>
