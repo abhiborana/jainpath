@@ -37,7 +37,7 @@ const NiyamDrawer = () => {
         </DrawerTrigger>
         <Button asChild className={"rounded-full"} variant={"outline"}>
           <Link
-            href="https://wa.me?text=Take today's niyam or pachkhan at https%3A%2F%2Fwww.dailyniyam.vercel.app&type=custom_url"
+            href="https://wa.me?text=Take today's niyam or pachkhan at https://dailyniyam.vercel.app"
             target="_blank"
           >
             <Share2Icon /> WhatsApp
