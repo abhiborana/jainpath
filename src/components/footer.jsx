@@ -55,9 +55,9 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200">
       <p className="sr-only">
-        Daily niyam helps you take a daily niyam or pachkhan in case you don't
-        have time to take a niyam. It's a great way to stay organized and
-        focused on your daily tasks. Enjoy your daily niyam!
+        Jainpath helps you take a daily niyam or pachkhan or daily bhakti
+        aradhana. It's a great way to stay organized and focused on your daily
+        tasks. Enjoy JainPath!
       </p>
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center gap-x-6 md:order-2">
@@ -74,7 +74,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm/6 text-slate-600 md:order-1 md:mt-0 dark:text-slate-400">
-          &copy; 2025 Daily Niyam. All rights reserved.
+          &copy; 2025 JainPath. All rights reserved.
         </p>
       </div>
     </footer>

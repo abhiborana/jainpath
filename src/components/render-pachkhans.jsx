@@ -1,8 +1,15 @@
 import { Pachkhans } from "@/constants/pachkhans";
+import { cn } from "@/lib/utils";
+import { Noto_Sans_Devanagari } from "next/font/google";
 import { notFound } from "next/navigation";
 import { memo, useMemo } from "react";
 import Heading from "./atoms/heading";
 import Paragraph from "./atoms/paragraph";
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  weight: "400",
+});
 
 const RenderPachkhans = ({ slug }) => {
   const pachkhan = useMemo(
@@ -23,7 +30,12 @@ const RenderPachkhans = ({ slug }) => {
           <h5 className="text-sm text-slate-500 font-medium uppercase">
             {lang}
           </h5>
-          <Paragraph className={"tracking-wider leading-8 text-lg"}>
+          <Paragraph
+            className={cn(
+              "tracking-wide leading-8 text-lg",
+              notoSansDevanagari.className
+            )}
+          >
             {pachkhan[lang]}
           </Paragraph>
         </div>

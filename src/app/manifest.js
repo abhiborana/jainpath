@@ -1,14 +1,15 @@
 export default function manifest() {
   return {
-    name: "Daily Niyam - Jain Pacchakan, Niyam, Aradhana",
-    short_name: "Daily Niyam",
+    name: "Jain Path - Pachkhan, Niyam, Jain Stavan, Aradhana",
+    short_name: "Jain Path",
     start_url: "/",
-    scope: "https://dailyniyam.vercel.app/",
+    scope: "https://jainpath.vercel.app/",
     orientation: "any",
     display: "standalone",
     dir: "auto",
     lang: "en-US",
-    description: "Jain niyams, pacchakan, aradhana for everyday purposes.",
+    description:
+      "Jain Pachkhan, Jain Stavans, Jain vidhi, Aradhana, Daily niyam & more.",
     display: "standalone",
     background_color: "#f8fafc",
     theme_color: "#f8fafc",

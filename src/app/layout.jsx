@@ -11,9 +11,10 @@ const geist = Geist({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://dailyniyam.vercel.app"),
-  title: "Daily Niyam - Jain Pacchakan, Niyam, Aradhana",
-  description: "Jain niyams, pacchakan, aradhana for everyday purposes.",
+  metadataBase: new URL("https://jainpath.vercel.app"),
+  title: "Jain Path - Pachkhan, Niyam, Jain Stavan, Aradhana",
+  description:
+    "Jain Pachkhan, Jain Stavans, Jain vidhi, Aradhana, Daily niyam & more.",
   keywords: [
     "Jain Pachkhan",
     "Jain niyamn",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <main className="p-2 py-4 md:p-4 md:py-8 flex justify-center w-full scroll-smooth">
-          <section className="max-w-7xl w-full">{children}</section>
+          <section className="max-w-5xl w-full">{children}</section>
         </main>
         <Footer />
         <Toaster richColors theme="light" />
