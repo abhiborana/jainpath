@@ -8,9 +8,8 @@ export async function generateMetadata({ params }, parent) {
   const pachkhan = Pachkhans.find((s) => s.slug === `/${slug}`);
 
   return {
-    title: pachkhan?.title || "",
-    description: pachkhan?.title || "",
-    keywords: pachkhan?.seo || ["jain pachkhans"],
+    title: pachkhan?.title || "" + " | JainPath",
+    description: `Learn the complete Vidhi for the ${pachkhan.title}. Understand its meaning, the correct sutra to recite, and the exact timings to follow. JainPath makes it easy.`,
   };
 }
 

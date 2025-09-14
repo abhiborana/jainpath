@@ -4,15 +4,15 @@ import { ArrowRightIcon, MoonIcon, SunIcon } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Jain Pachkhans - Jain Path",
+  title: "Complete List of All Jain Pachkhans | JainPath",
   description:
-    "All types of jain pachkhans, navkarsi, porsi, sadh posri, purimaddh, avaddh, upvas, ekashana, biyasana, ayambil, nivi, cohvihar, tivihar, duvihar and more.",
+    "Find and learn all major Jain Pachkhans, including Navkarsi, Porsi, and Chauvihar. Get clear instructions and text to help you take your daily vows correctly.",
 };
 
 const Pachkhans = () => {
   return (
     <div className="flex flex-col items-center gap-6 w-full">
-      <Heading id="pachkhans">Jain Pachkhans</Heading>
+      <Heading id="pachkhans">Jain Pachkhans (Vows)</Heading>
       <div className="flex flex-col gap-4">
         {PachkhansArray.map((pachkhan) => (
           <Link
