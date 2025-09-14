@@ -1,4 +1,5 @@
 import { Chaityavandans } from "./chaityavandans";
+import { Stavans } from "./stavans";
 import {
   Annath,
   Arihantecheiyanam,
@@ -12,26 +13,42 @@ import {
   Namorhat,
   Namutthunam,
   Tassuttari,
-  Uvasaggaharm,
 } from "./sutras";
 import { Thoys } from "./thoys";
 
 export const MandirVidhis = [
   {
-    title: "चैत्यवंदन विधि",
+    heading: "प्रदक्षिणा दोहा",
+    title: "प्रदक्षिणा दोहा | Pradakshina doha",
+    slug: "/pradakshina-doha",
+  },
+  {
+    heading: "नवआंगी पूजा",
+    title: "नवआंगी पूजा | Nav angi puja",
+    slug: "/navaangi-puja",
+  },
+  {
+    heading: "अष्टप्रकारी पूजन",
+    title: "अष्टप्रकारी पूजन | Ashtaprakari pujan",
+    slug: "/ashtaprakari-puja",
+  },
+  {
+    heading: "चैत्यवंदन विधि",
+    title: "चैत्यवंदन विधि | Chaityavandan vidhi",
     slug: "/chaitya-vandan",
+    randomize: true,
     steps: [
       Khamasaman,
       Iryavahiyam,
       Tassuttari,
       Annath,
-      "1 logass nahi aaye to 4 Navkar",
+      "(1 लोगस्स ना आये तो 4 नवकार का काउसग्ग )",
       Logass,
       Khamasaman,
       Khamasaman,
       Khamasaman,
       // Add a random chaityavandan
-      [Chaityavandans],
+      (val) => Chaityavandans[val]?.slug,
       Jankinchi,
       Namutthunam,
       Javanticheiam,
@@ -39,38 +56,30 @@ export const MandirVidhis = [
       Javantkevisahu,
       Namorhat,
       // Add a random stavan or uvasaggaharam
-      [Uvasaggaharm],
+      (val) => Stavans.find((s) => s.slug === `/${val}`).slug,
       Jayviyaraya,
       Arihantecheiyanam,
       Annath,
-      "1 navkar ka kausagg thoy sun ke paarna",
+      "(1 नवकार का काउसग्ग थोय सुन के पारना)",
       // Add a random thoy
-      [Thoys],
+      (val) => Thoys[val].slug,
       Khamasaman,
     ],
   },
   {
-    title: "देववंदन विधि",
-    slug: "/dev-vandan",
-  },
-  {
-    title: "प्रदिक्षणा दोहा",
-    slug: "/pradakshina-doha",
-  },
-  {
-    title: "अष्टप्रकारी पूजन",
-    slug: "/ashtaprakari-puja",
-  },
-  {
-    title: "स्नात्र पूजा",
+    heading: "स्नात्र पूजा",
+    title: "स्नात्र पूजा | Snatra puja",
     slug: "/snatra-puja",
   },
   {
-    title: "नवआंगी पूजा",
-    slug: "/navaangi-puja",
-  },
-  {
-    title: "शांति कलश",
+    heading: "शांति कलश",
+    title: "शांति कलश | Shanti kalash",
     slug: "/shanti-kalash",
+  },
+
+  {
+    heading: "देववंदन विधि",
+    title: "देववंदन विधि | Dev vandan vidhi",
+    slug: "/dev-vandan",
   },
 ];
