@@ -74,7 +74,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm/6 text-slate-600 md:order-1 md:mt-0 dark:text-slate-400">
-          &copy; 2025 JainPath. All rights reserved.
+          &copy; {new Date().getFullYear()} JainPath.in | All rights reserved.
         </p>
       </div>
     </footer>

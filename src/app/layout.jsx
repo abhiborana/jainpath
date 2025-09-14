@@ -14,14 +14,22 @@ export const metadata = {
   metadataBase: new URL("https://jainpath.vercel.app"),
   title: "Jain Path - Pachkhan, Niyam, Jain Stavan, Aradhana",
   description:
-    "Jain Pachkhan, Jain Stavans, Jain vidhi, Aradhana, Daily niyam & more.",
+    "JainPath is a modern, all-in-one resource for Jainism. Easily access all Pachkhans, listen to Stavans, learn Mandir Vidhis, and take a daily Niyam. Your complete digital companion for spiritual growth.",
   keywords: [
+    "Jain Path",
+    "Jain Dharma",
+    "Jain rituals",
+    "Jain prayers",
+    "Jain stavan",
     "Jain Pachkhan",
-    "Jain niyamn",
-    "Jain aradhana",
-    "Jain pachhakhan",
-    "jain pachkan",
-    "daily niyam",
+    "daily Jain niyam",
+    "chaityavandan vidhi",
+    "navkarsi pachkhan",
+    "Adinath stavan",
+    "Bhaktamar Stotra",
+    "pachkan",
+    "pachhakhan",
+    "pachakhan",
   ],
 };
 
@@ -33,6 +41,7 @@ export default function RootLayout({ children }) {
           "antialiased relative bg-slate-50 text-black scroll-smooth overflow-y-auto overflow-x-hidden",
           geist.className
         )}
+        cz-shortcut-listen="true"
       >
         <Navbar />
         <main className="p-2 py-4 md:p-4 md:py-8 flex justify-center w-full scroll-smooth">

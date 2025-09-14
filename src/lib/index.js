@@ -15,3 +15,5 @@ export const shuffleArray = (arr) => {
 export const sleep = async (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
+
+export const getRandomIntegar = (max = 1) => Math.round(Math.random() * max);
