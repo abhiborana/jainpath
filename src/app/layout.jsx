@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geist = Geist({
@@ -50,6 +51,13 @@ export default function RootLayout({ children }) {
         <Footer />
         <Toaster richColors theme="light" />
         <Analytics />
+        <Script
+          src={
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2856054454705002"
+          }
+          async
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
