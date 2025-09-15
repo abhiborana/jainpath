@@ -11,8 +11,8 @@ const geist = Geist({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://jainpath.vercel.app"),
-  title: "Jain Path - Pachkhan, Niyam, Jain Stavan, Aradhana",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
+  title: "JainPath - Pachkhan, Niyam, Jain Stavan, Aradhana",
   description:
     "JainPath is a modern, all-in-one resource for Jainism. Easily access all Pachkhans, listen to Stavans, learn Mandir Vidhis, and take a daily Niyam. Your complete digital companion for spiritual growth.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     "navkarsi pachkhan",
     "Adinath stavan",
     "Bhaktamar Stotra",
-    "pachkan",
+    "pachkhan",
     "pachhakhan",
     "pachakhan",
   ],
