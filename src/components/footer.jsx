@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -73,8 +74,16 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm/6 text-slate-600 md:order-1 md:mt-0 dark:text-slate-400">
-          &copy; {new Date().getFullYear()} JainPath.in | All rights reserved.
+        <p className="mt-8 text-center text-sm/6 items-center justify-center-safe text-slate-600 md:order-1 md:mt-0 dark:text-slate-400 flex flex-wrap gap-4">
+          <span>&copy; {new Date().getFullYear()} JainPath.in</span>{" "}
+          <Link href={process.env.NEXT_PUBLIC_DOMAIN} target="_blank">
+            <Image
+              width={80}
+              height={80}
+              src={"/jainpath_qr.png"}
+              alt={"JainPath"}
+            />
+          </Link>
         </p>
       </div>
     </footer>

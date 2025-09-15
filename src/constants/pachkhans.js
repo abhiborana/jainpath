@@ -1,14 +1,14 @@
 export const Pachkhans = [
   {
-    title: "Navkarsi / Porsi / Sadhporsi / Purimaddh / Avaddh Pachkan",
+    title: "Navkarsi / Porsi / Sadhporsi / Purimaddh / Avaddh Pachkhan",
     slug: "/prabhat-jain-pachkhan-navkarsi-porsi-sadhporsi-purimaddh-avaddh",
     seo: [
-      "Navkarsi pachkan",
-      "Porsi pachkan",
-      "Sadhporsi pachkan",
-      "Purimaddh pachkan",
-      "Avaddh pachkan",
-      "subha ka pachkan",
+      "Navkarsi pachkhan",
+      "Porsi pachkhan",
+      "Sadhporsi pachkhan",
+      "Purimaddh pachkhan",
+      "Avaddh pachkhan",
+      "subha ka pachkhan",
     ],
     time: "day",
     english:
@@ -19,13 +19,13 @@ export const Pachkhans = [
       "उग्गए सूरे, नमुक्कार-सहिअं, पोरिसिं, साड्ढपोरिसिं, सूरे उग्गए पुरिमड्ढ, अवड्ढ मुट्ठिसहिअं, पच्चक्खाइ (पच्चक्खामि); चउव्विहं पि आहारं, असणं, पाणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, पच्छन्नकालेणं, दिसामोहेणं, साहुवयणेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं वोसिरई (वोसिरामि).",
   },
   {
-    title: "Ayambil / Nivi / Ekasanu / Biyasanu Pachkan",
+    title: "Ayambil / Nivi / Ekasanu / Biyasanu Pachkhan",
     slug: "/jain-pachkhan-ayambil-nivi-ekasanu-biyasanu",
     seo: [
-      "Ayambil pachkan",
-      "Nivi pachkan",
-      "Ekasana pachkan",
-      "Biyasana pachkan",
+      "Ayambil pachkhan",
+      "Nivi pachkhan",
+      "Ekasana pachkhan",
+      "Biyasana pachkhan",
     ],
     time: "day",
     english:
@@ -36,9 +36,9 @@ export const Pachkhans = [
       "उग्गए सूरे, नमुक्कार-सहिअं, पोरिसिं, साड्ढपोरिसिं, मुट्ठिसहिअं, पच्चक्खाइ (पच्चक्खामि); उग्गए सूरे चउव्विहं पि आहारं, असणं, पाणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, पच्छन्नकालेणं, दिसामोहेणं, साहुवयणेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं, आयंबिलं निव्विगइअं विगइओ पच्चक् खाइ (पच्चक् खामि); अन्नत्थणाभोगेणं, सहसागारेणं, लेवालेवेणं, गिहत्थसंसट्ठेणं, उकि् खत्त-विवेगेणं, पडुच्चमकि् खएणं, पारिट्ठावणियागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं, एगासणं बियासणं पच्चक् खाइ (पच्चक् खामि), तिविहं पि आहारं, असणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, सागारियागारेणं, आउंटण-पसारेणं, गुरू-अब्भुट्ठाणेणं, पारिट्ठावणियागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं, पाणस्स लेवेण वा, अलेवेण वा, अच्छेण वा, बहुलेवेण वा, ससित्थेण वा, असित्थेण वा वोसिरई (वोसिरामि).",
   },
   {
-    title: "Tivihar Upvas Pachkan",
+    title: "Tivihar Upvas Pachkhan",
     slug: "/jain-pachkhan-tivihar-upvas",
-    seo: ["Tivihar Upvas Pachkan", "upvas pachkan", "tivihar upwas"],
+    seo: ["Tivihar Upvas Pachkhan", "upvas pachkhan", "tivihar upwas"],
     time: "day",
     english:
       "Sure, Uggae, Abbhattattham, Pachchakkhaai (Pachchakkhaami), Tiviham Pi Aahaaram, Asanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Paaritthaavaniyaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Paanhaar, Porisim, Saaddhaporisim, Sure Uggae Purimaddha, Avatddha, Mutthisahiam, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Pachchhannakaalenam, Disaamohenam, Saahuvayanenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Paanassa Levena Vaa, Alevena Vaa, Achchhena Vaa, Bahulevena Vaa, Sasitthena Vaa, Asitthena Vaa, Vosirai (Vosiraami).",
@@ -48,9 +48,9 @@ export const Pachkhans = [
       "सूरे उग्गए अब्भत्तट्ठं पच्चक् खाइ (पच्चक् खामि); तिविहं पि आहारं, असणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, पारिट्ठावणियागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं; पाणहार पोरिसि, साड्ढपोरिसि, मुट्ठिसहिअं, पच्चक् खाइ (पच्चक् खामि); अन्नत्थणाभोगेणं, सहसागारेणं, पच्छन्नकालेणं, दिसामोहेणं, साहुवयणेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं, पाणस्स लेवेण वा, अलेवेण वा, अच्छेण वा, बहुलेवेण वा, ससित्थेण वा, असित्थेण वा वोसिरई (वोसिरामि).",
   },
   {
-    title: "Chovihar Upvas Pachkan",
+    title: "Chovihar Upvas Pachkhan",
     slug: "/jain-pachkhan-chovihar-upvas",
-    seo: ["Chovihar Upvas Pachkan", "upvas pachkan", "tivihar upwas"],
+    seo: ["Chovihar Upvas Pachkhan", "upvas pachkhan", "tivihar upwas"],
     time: "day",
     english:
       "Sure, Uggae, Abbhattattham, Pachchakkhaai (Pachchakkhaami), Chauviham Pi Aahaaram, Asanam, Paanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Paaritthaavaniyaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
@@ -60,9 +60,9 @@ export const Pachkhans = [
       "सूरे उग्गए अब्भत्तट्ठं पच्चक् खाइ (पच्चक् खामि); चउव्विहं पि आहारं, असणं, पाणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, पारिट्ठावणियागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं, वोसिरई (वोसिरामि).",
   },
   {
-    title: "Chauvihar / Tivihar / Duvihar Pachkan",
+    title: "Chauvihar / Tivihar / Duvihar Pachkhan",
     slug: "/jain-pachkhan-chauvihar-tivihar-duvihar",
-    seo: ["Chauvihar Pachkan", "Tivihar Pachkan", "Duvihar Pachkan"],
+    seo: ["Chauvihar Pachkhan", "Tivihar Pachkhan", "Duvihar Pachkhan"],
     time: "night",
     english:
       "Divasacharimam, Pachchakkhaai (Pachchakkhaami), Chauviham Pi Aahaaram, Tiviham Pi Aahaaram, Duviham Pi Aahaaram, Asanam, Paanam, Khaaimam, Saaimam, Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
@@ -72,9 +72,9 @@ export const Pachkhans = [
       "दिवसचरिमं पच्चक् खाइ (पच्चक् खामि); चउव्विहं पि आहारं, तिविहं पि आहारं, दुविहं पि आहारं, असणं, पाणं, खाइमं, साइमं, अन्नत्थणाभोगेणं, सहसागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं वोसिरई (वोसिरामि).",
   },
   {
-    title: "Panahar Pachkan",
+    title: "Panahar Pachkhan",
     slug: "/jain-pachkhan-panahar",
-    seo: ["Panahar Pachkan", "panahar pachkhan"],
+    seo: ["Panahar Pachkhan", "panahar pachkhan"],
     time: "night",
     english:
       "Paanahaar, Divasacharimam, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
@@ -84,9 +84,9 @@ export const Pachkhans = [
       "पाणहार दिवसचरिमं पच्चक् खाइ (पच्चक् खामि); अन्नत्थणाभोगेणं, सहसागारेणं, महत्तरागारेणं, सव्वसमाहि-वत्तियागारेणं वोसिरई (वोसिरामि).",
   },
   {
-    title: "Dharana Abhigrah Pachkan",
+    title: "Dharana Abhigrah Pachkhan",
     slug: "/jain-pachkhan-dharana-abhigrah",
-    seo: ["Dharana Abhigrah Pachkan", "dharana abhigrah pachkhan"],
+    seo: ["Dharana Abhigrah Pachkhan", "dharana abhigrah pachkhan"],
     time: "night",
     english:
       "Dharanaa, Abhiggaham, Pachchakkhaai (Pachchakkhaami), Annatthanaabhogenam, Sahasaagaarenam, Mahattaraagarenam, Savvasamaahivattiyaa-Gaarenam, Vosirai (Vosiraami).",
