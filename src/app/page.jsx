@@ -11,12 +11,12 @@ const Home = () => {
       <Heading className={"text-pink-900"}>
         A Simple Path for Daily Jain Aradhana
       </Heading>
-      <div className="flex flex-wrap gap-8 items-center justify-center">
+      <div className="grid grid-cols-2 w-full sm:grid-cols-3 self-center md:grid-cols-4 gap-3 items-center justify-center">
         {Links.map((link) => (
           <Link
             href={link.href}
             key={link.href}
-            className="h-32 lg:h-44 rounded-2xl aspect-video shadow-lg relative overflow-hidden"
+            className="col-span-1 w-full rounded-lg aspect-video shadow-lg relative overflow-hidden"
           >
             <Image
               className="object-cover object-center"
@@ -25,7 +25,7 @@ const Home = () => {
               alt={link.title}
               priority
             />
-            <span className="text-3xl absolute inset-0 hover:bg-black/50 bg-black/25 hover:text-5xl transition-all duration-500 p-4 font-semibold text-white z-10">
+            <span className="text-base md:text-4xl absolute inset-0 hover:bg-black/50 bg-black/25 hover:text-xl hover:md:text-5xl transition-all duration-500 p-4 font-semibold text-white z-10">
               {link.title}
             </span>
           </Link>

@@ -60,7 +60,7 @@ export default function Footer() {
         aradhana. It's a great way to stay organized and focused on your daily
         tasks. Enjoy JainPath!
       </p>
-      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-3 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center gap-x-6 md:order-2">
           {navigation.map((item) => (
             <Link
@@ -74,9 +74,12 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm/6 items-center justify-center-safe text-slate-600 md:order-1 md:mt-0 dark:text-slate-400 flex flex-wrap gap-4">
+        <p className="mt-4 text-center text-sm/6 items-center justify-center-safe text-slate-600 md:order-1 md:mt-0 dark:text-slate-400 flex flex-wrap gap-4">
           <span>&copy; {new Date().getFullYear()} JainPath.in</span>{" "}
-          <Link href={process.env.NEXT_PUBLIC_DOMAIN} target="_blank">
+          <Link
+            href={`https://wa.me?text=प्रणाम, जैनपथ के माध्यम से नित्य नियम, पच्चखाण, भक्तामर स्तोत्र, मंदिर विधि चैत्यवंदन स्तवन सभी एक जगह पर। ${process.env.NEXT_PUBLIC_DOMAIN}`}
+            target="_blank"
+          >
             <Image
               width={80}
               height={80}

@@ -37,7 +37,7 @@ const NiyamDrawer = () => {
         </DrawerTrigger>
         <Button asChild className={"rounded-full"} variant={"outline"}>
           <Link
-            href="https://wa.me?text=Take today's niyam or pachkhan at https://dailyniyam.vercel.app"
+            href={`https://wa.me?text=प्रणाम, जैनपथ के माध्यम से पाएं नित्य नियम, पच्चखाण, भक्तामर स्तोत्र, मंदिर विधि चैत्यवंदन स्तवन सभी एक जगह पर। ${process.env.NEXT_PUBLIC_DOMAIN}`}
             target="_blank"
           >
             <Share2Icon /> WhatsApp

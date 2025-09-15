@@ -16,7 +16,7 @@ const CurrentNiyam = () => {
   ) : (
     <Paragraph>
       <b>Choose a number</b> from below to take a niyam, or get a{" "}
-      <Link href={"/#random-niyam"} className="underline">
+      <Link href={"/niyams#random-niyam"} className="underline">
         random niyam
       </Link>
       ,
