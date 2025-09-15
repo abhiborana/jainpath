@@ -6,9 +6,16 @@ const kalamFont = Kalam({
   weight: "700",
 });
 
-const Heading = ({ children, kalam = false, className, ...props }) => {
+const Heading = ({
+  children,
+  kalam = false,
+  className,
+  as = "h1",
+  ...props
+}) => {
+  const Comp = as;
   return (
-    <h1
+    <Comp
       className={cn(
         "text-4xl md:pt-8 font-semibold w-full tracking-tighter text-balance text-left md:text-center md:text-6xl",
         kalam && kalamFont.className,
@@ -17,7 +24,7 @@ const Heading = ({ children, kalam = false, className, ...props }) => {
       {...props}
     >
       {children}
-    </h1>
+    </Comp>
   );
 };
 

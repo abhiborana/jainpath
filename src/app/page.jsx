@@ -23,6 +23,7 @@ const Home = () => {
               fill
               src={link.imageUrl}
               alt={link.title}
+              priority
             />
             <span className="text-3xl absolute inset-0 hover:bg-black/50 bg-black/25 hover:text-5xl transition-all duration-500 p-4 font-semibold text-white z-10">
               {link.title}
@@ -30,7 +31,9 @@ const Home = () => {
           </Link>
         ))}
       </div>
-      <Heading className={"text-pink-900"}>Quick Links</Heading>
+      <Heading as="h2" className={"text-pink-900"}>
+        Quick Links
+      </Heading>
       <div className="flex flex-col gap-4">
         {QuickLinks.map((links) => (
           <Link
@@ -48,16 +51,33 @@ const Home = () => {
           </Link>
         ))}
       </div>
-      <Paragraph className={"text-neutral-500"}>
+      <Paragraph className={"text-neutral-500 text-sm md:text-base"}>
         Welcome to JainPath, your modern companion for daily Jain Aradhana. In
-        our busy lives, finding clear and simple guidance for sacred rituals can
-        be challenging. JainPath bridges this gap, offering an easy-to-use
-        platform for everything you need on your spiritual journey. Whether
-        you're looking to correctly take a daily Pachkhan, learn the proper
-        Chaityavandan Vidhi, immerse yourself in devotional Stavans, or find a
-        new Niyam for self-improvement, our goal is to be your trusted resource.
+        the hustle of our busy, modern lives, finding clear and simple guidance
+        for sacred rituals can often be a challenge. Ancient wisdom, passed down
+        through generations, can feel distant. JainPath was created to bridge
+        this gap, offering an intuitive, all-in-one digital platform for
+        everything you need on your spiritual journey. Our goal is to be your
+        single, trusted resource, whether you're starting your day with the
+        Navkarsi Pachkhan, seeking to perform a meaningful Chaityavandan with
+        confidence, immersing yourself in the bhakti of timeless Stavans, or
+        challenging yourself with a daily Niyam for self-improvement.
+      </Paragraph>
+      <Paragraph className={"text-neutral-400 text-sm md:text-base"}>
         We are dedicated to making the timeless wisdom of Jain Dharma accessible
-        to every generation, right at your fingertips.
+        to every generation, but we also believe in the profound importance of
+        tradition and correct practice. Think of JainPath as your digital
+        companion for learning—a guide designed to make sacred sutras, stavans,
+        and vidhis more approachable. The true spiritual benefit of these
+        rituals comes from learning them by heart with correct pronunciation
+        (Shuddha Uchharana). Our platform is a space for your sadhana—a place to
+        practice repeatedly, refine your pronunciation, and build a strong,
+        personal foundation in your own time. While this platform provides
+        knowledge at your fingertips, the deepest understanding and grace are
+        ultimately found on the path of learning from a Guru. Join us in this
+        endeavor to preserve our heritage and enrich our daily lives. Let
+        JainPath be the light that supports and inspires your unique spiritual
+        path.
       </Paragraph>
     </div>
   );
