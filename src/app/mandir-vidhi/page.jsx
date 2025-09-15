@@ -19,7 +19,7 @@ const MandirVidhis = () => {
   return (
     <div className="flex flex-col items-center gap-6 w-full">
       <Heading id="pachkhans">Jain Mandir Vidhis</Heading>
-      <div className="flex flex-wrap gap-8 justify-center items-center">
+      <div className="flex flex-wrap gap-4 md:gap-8 justify-center items-center">
         {vidhis.map((vidhi) => (
           <Link
             key={vidhi.title}

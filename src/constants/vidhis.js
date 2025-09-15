@@ -37,6 +37,11 @@ export const MandirVidhis = [
     title: "चैत्यवंदन विधि | Chaityavandan vidhi",
     slug: "/chaitya-vandan",
     randomize: true,
+    short: [
+      (val) => Chaityavandans[val]?.slug,
+      (val) => Stavans.find((s) => s.slug === `/${val}`).slug,
+      (val) => Thoys[val].slug,
+    ],
     steps: [
       Khamasaman,
       Iryavahiyam,

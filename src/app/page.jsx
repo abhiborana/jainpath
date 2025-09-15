@@ -11,7 +11,7 @@ const Home = () => {
       <Heading className={"text-pink-900"}>
         A Simple Path for Daily Jain Aradhana
       </Heading>
-      <div className="grid grid-cols-2 w-full sm:grid-cols-3 self-center md:grid-cols-4 gap-3 items-center justify-center">
+      <div className="grid grid-cols-2 w-full sm:grid-cols-3 self-center gap-3 md:gap-6 items-center justify-center">
         {Links.map((link) => (
           <Link
             href={link.href}

@@ -17,7 +17,7 @@ const Heading = ({
   return (
     <Comp
       className={cn(
-        "text-4xl md:pt-8 font-semibold w-full tracking-tighter text-balance text-left md:text-center md:text-6xl",
+        "text-4xl leading-none md:pt-8 font-semibold w-full tracking-tighter text-balance text-left md:text-center md:text-6xl",
         kalam && kalamFont.className,
         className
       )}
